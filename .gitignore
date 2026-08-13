@@ -1,0 +1,53 @@
+# ---- Secrets / credentials (never commit) ----
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*
+secrets*
+.netrc
+.huggingface/
+huggingface_token*
+token.txt
+
+# ---- Datasets & artifacts distributed out-of-band ----
+input_data/
+token_mapping/
+pretrained_tokenizer_*/
+gating/
+output_dir/
+*.json
+*.npy
+*.csv
+*.tar.gz
+*.tar.gz.part-*
+
+# ---- Model checkpoints ----
+*.pth
+*.pt
+*.bin
+*.safetensors
+*.model
+*.ckpt
+
+# ---- Experiment tracking (wandb configs record the full CLI, incl. any token) ----
+wandb/
+runs/
+logs/
+*.log
+
+# ---- Notebooks ----
+*.ipynb
+.ipynb_checkpoints/
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# ---- OS ----
+.DS_Store
